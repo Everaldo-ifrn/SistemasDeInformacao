@@ -55,7 +55,7 @@ int main (){
     printf("Digite o número de pontos turísticos da cidade: ");
     scanf("%i", &n_PontosTuristicos2);
 
-    printf("- Vamos ver suas cartas!\n");
+    printf("\n- Vamos ver suas cartas!\n"); //coloquei um \n antes apenas para deixar uma linha em branco
     printf("Carta 1: \n"); // mostrando as informações da carta 1
     printf("Estado: %c \n", estado1);
     printf("Código: %s \n", codigoCarta1);
@@ -63,7 +63,7 @@ int main (){
     printf("População: %i \n", população1);
     printf("Área: %f km² \n", area1);
     printf("PIB: %f bilhões de reais \n", pib1);
-    printf("Número de Pontos Turísticos: %i \n", n_PontosTuristicos1);
+    printf("Número de Pontos Turísticos: %i \n\n", n_PontosTuristicos1); // coloquei dois "\n apenas para deixar uma linha em branco"
 
     printf("Carta 2: \n"); // mostrando as informações da carta 1
     printf("Estado: %c \n", estado2);
