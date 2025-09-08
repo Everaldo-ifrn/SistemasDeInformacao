@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 int main (){
+    // declarando as variáveis da carta 1
     char estado1;
     char codigoCarta1 [20];
     char nomeCidade1 [20];
@@ -9,6 +10,7 @@ int main (){
     float pib1;
     int n_PontosTuristicos1;
 
+    // declarando as variáveis da carta 2
     char estado2;
     char codigoCarta2 [20];
     char nomeCidade2 [20];
@@ -19,52 +21,42 @@ int main (){
 
     printf("Bem vindo(a) ao Super-Trunfo! \n");
 
-    printf("- Carta 1 -\n");
+    // pedindo todas as informações da carta 1
+    printf("- Carta 1 -\n"); 
     printf("Digite a letra do Estado: ");
     scanf("%c", &estado1);
-
     printf("Digite o código da carta: ");
     scanf("%s", codigoCarta1);
-
     printf("Digite o nome da cidade: ");
     scanf("%s", nomeCidade1);
-
     printf("Digite a população da cidade: ");
     scanf("%i", &população1);
-
     printf("Digite a área em km² da cidade: ");
     scanf("%f", &area1);
-
     printf("Digite o PIB da cidade: ");
     scanf("%f", &pib1);
-
     printf("Digite o número de pontos turísticos da cidade: ");
     scanf("%i", &n_PontosTuristicos1);
 
-    printf("- Carta 2 -\n");
+    // pedindo todas as informações da carta 2
+    printf("- Carta 2 -\n"); 
     printf("Digite a letra do Estado: ");
-    scanf(" %c", &estado2); // o espaço antes do %C é para evitar do scanf ler o \n como caracter!
-
+    scanf(" %c", &estado2); // o espaço antes do %C é para evitar que o \n seja lido como caracter!
     printf("Digite o código da carta: ");
     scanf("%s", codigoCarta2);
-
     printf("Digite o nome da cidade: ");
     scanf("%s", nomeCidade2);
-
     printf("Digite a população da cidade: ");
     scanf("%i", &população2);
-
     printf("Digite a área em km² da cidade: ");
-    scanf(" %f", &area2); // o espaço antes do %f é para evitar do scanf ler o \n como caracter!
-
+    scanf(" %f", &area2); // o espaço antes do %f é para evitar que o \n seja lido como caracter!
     printf("Digite o PIB da cidade: ");
     scanf("%f", &pib2);
-
     printf("Digite o número de pontos turísticos da cidade: ");
     scanf("%i", &n_PontosTuristicos2);
 
     printf("- Vamos ver suas cartas!\n");
-    printf("Carta 1: \n");
+    printf("Carta 1: \n"); // mostrando as informações da carta 1
     printf("Estado: %c \n", estado1);
     printf("Código: %s \n", codigoCarta1);
     printf("Nome da Cidade: %s \n", nomeCidade1);
@@ -73,7 +65,7 @@ int main (){
     printf("PIB: %f bilhões de reais \n", pib1);
     printf("Número de Pontos Turísticos: %i \n", n_PontosTuristicos1);
 
-    printf("Carta 2: \n");
+    printf("Carta 2: \n"); // mostrando as informações da carta 1
     printf("Estado: %c \n", estado2);
     printf("Código: %s \n", codigoCarta2);
     printf("Nome da Cidade: %s \n", nomeCidade2);
