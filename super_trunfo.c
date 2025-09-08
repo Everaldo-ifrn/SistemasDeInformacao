@@ -41,7 +41,7 @@ int main (){
     // pedindo todas as informações da carta 2
     printf("- Carta 2 -\n"); 
     printf("Digite a letra do Estado: ");
-    scanf(" %c", &estado2); // o espaço antes do %C é para evitar que o \n seja lido como caracter!
+    scanf(" %c", &estado2); // o espaço antes do %c é para que ele ignore o /n que ficou no buffer depois de apertar o Enter!
     printf("Digite o código da carta: ");
     scanf("%s", codigoCarta2);
     printf("Digite o nome da cidade: ");
@@ -49,7 +49,7 @@ int main (){
     printf("Digite a população da cidade: ");
     scanf("%i", &população2);
     printf("Digite a área em km² da cidade: ");
-    scanf(" %f", &area2); // o espaço antes do %f é para evitar que o \n seja lido como caracter!
+    scanf("%f", &area2); 
     printf("Digite o PIB da cidade: ");
     scanf("%f", &pib2);
     printf("Digite o número de pontos turísticos da cidade: ");
